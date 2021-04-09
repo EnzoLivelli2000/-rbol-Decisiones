@@ -5,8 +5,6 @@ from sklearn.tree import export_graphviz
 import graphviz
 
 iris = load_iris()
-print("iris")
-print(iris)
 AEntrena,APruebas,BEntrena,BPruebas=train_test_split(iris['data'],iris['target'])
 
 
@@ -26,4 +24,4 @@ export_graphviz(clasficadorArbol,out_file='arbol.dot', class_names=iris['target_
 
 with open('arbol.dot') as f:
     dot_graph=f.read()
-graphviz.Source(dot_graph)
+graphviz.Source(dot_graph).view()
