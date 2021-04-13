@@ -7,7 +7,6 @@ import graphviz
 iris = load_iris()
 AEntrena,APruebas,BEntrena,BPruebas=train_test_split(iris['data'],iris['target'])
 
-
 clasficadorArbol=DecisionTreeClassifier()
 clasficadorArbol.fit(AEntrena,BEntrena)
 
