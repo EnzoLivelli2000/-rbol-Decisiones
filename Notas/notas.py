@@ -22,7 +22,7 @@ print(one_hot_data)
 # instanciamos el arbol de desiciones y lo asignamos a la variable clf
 clf = tree.DecisionTreeClassifier()
 
-# entreamos nuestro arbol con los data set's creados
+# entrenamos nuestro arbol con los data ses creados
 clf_train = clf.fit(one_hot_data, calf['nota'])
 
 # realizamos una predicción en funcion de los siguientes datos
@@ -30,7 +30,7 @@ prediction = clf_train.predict([[20,0,1,0]])
 
 print(prediction)
 
-#realizamos una simple condicional para poder monstrar un mensaje en la pantalla
+#realizamos una simple condicional para poder mostrar un mensaje en la pantalla
 if prediction >= 13:
     print("Estas aprobado")
 else:

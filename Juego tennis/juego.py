@@ -56,9 +56,9 @@ else:
     print(' hoy NO se juega')
 
 #esta parte comentada aún está en desarrollo
-""" dot_data = tree.export_graphviz(decisionTree, out_file='juego.dot',feature_names=list(inputs_n), class_names=['Not_Play', 'Play'], rounded=True, filled=True)
+dot_data = tree.export_graphviz(decisionTree, out_file='juego.dot',feature_names=list(inputs_n), class_names=['Not_Play', 'Play'], rounded=True, filled=True)
 
 with open('juego.dot') as f:
     dot_graph=f.read()
 graphviz.Source(dot_graph).view()
- """
+ 

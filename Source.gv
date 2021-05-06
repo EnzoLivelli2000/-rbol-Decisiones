@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="cielo_n <= 0.5\ngini = 0.496\nsamples = 11\nvalue = [5, 6]\nclass = Play", fillcolor="#deeffb"] ;
+1 [label="humedo_n <= 0.5\ngini = 0.375\nsamples = 4\nvalue = [3, 1]\nclass = Not_Play", fillcolor="#eeab7b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = Not_Play", fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Play", fillcolor="#399de5"] ;
+1 -> 3 ;
+4 [label="velocidadViento_n <= 0.5\ngini = 0.408\nsamples = 7\nvalue = [2, 5]\nclass = Play", fillcolor="#88c4ef"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="cielo_n <= 1.5\ngini = 0.5\nsamples = 4\nvalue = [2, 2]\nclass = Not_Play", fillcolor="#ffffff"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = Play", fillcolor="#399de5"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = Not_Play", fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = Play", fillcolor="#399de5"] ;
+4 -> 8 ;
+}
